@@ -67,6 +67,18 @@ This is a very simple example how to use Global Counter module. You of course ca
 
 *Please see tests! I believe they document this package better then I here :)*
 
+To run tests run:
+
+```
+make test
+```
+
+or
+
+```
+./tests/testrunner.py /usr/local/google_appengine tests
+```
+
 ## Some terminology
 
 Here is a terminology clarification that I will be using later in the documentation:
