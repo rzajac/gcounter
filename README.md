@@ -49,9 +49,9 @@ counter = user.get_counter_actions()  # returns {'confirmed_email': 1}
 ```
 
 This time the counter dictionary returned with counter name and count equal to 1. This means that you should update the counter name
-'confirmed_email' adding to it 1.
+*confirmed_email* adding 1 to it.
 
-If for some reason you would later change confirmed property from True to False and called `user.get_counter_actions()` it would
+If for some reason you would later change confirmed property from *True* to *False* and called `user.get_counter_actions()` it would
 return `{'confirmed_email': -1}` indicating that you have to decrement the counter.
 
 Now that we have the counter name to update we want to call:
@@ -65,7 +65,7 @@ and we are done. To get current value of the counter you would call `gcounter.Co
 
 This is a very simple example how to use Global Counter module. You of course can have in a model as many counters as you want.
 
-*Please see tests! I believe they document this package better then I here :)*
+**Please see tests! I believe they document this package better then I here :)**
 
 To run tests run:
 
@@ -83,9 +83,11 @@ or
 
 Here is a terminology clarification that I will be using later in the documentation:
 
-*New model* - model that has not been persisted in the Datastore.
-*Persisted model* - model that has been saved in the Datastore.
-*Pristine state* - model that has not been edited since retraining from the Datastore.
+**New model** - model that has not been persisted in the Datastore.
+
+**Persisted model** - model that has been saved in the Datastore.
+
+**Pristine state** - model that has not been edited since retraining from the Datastore.
 
 ## Counter types
 
@@ -156,9 +158,9 @@ Also:
 
 gcounter.StringProperty counters have more features then other types. First of all they support three counter types:
 
-- *simple counter* - regular counter that we saw in the example above
-- *complex counter* - a counter that allows you to build counter name based on tracked property value
-- *dependent counter* - a counter that name is constructed from values of other properties in the model
+- **simple counter** - regular counter that we saw in the example above
+- **complex counter** - a counter that allows you to build counter name based on tracked property value
+- **dependent counter** - a counter that name is constructed from values of other properties in the model
 
 We will see examples of all of them later.
 
